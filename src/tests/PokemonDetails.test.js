@@ -43,7 +43,7 @@ test('A página deve conter um texto <name> Details, onde <name> é o nome do Po
 
 test('Não deve existir o link de navegação para os detalhes do Pokémon selecionado', () => {
   renderWithRouter(<App />);
-  const moreDetailsLink = screen.getByText('More details');
+  const moreDetailsLink = screen.getByText(/more details/i);
   expect(moreDetailsLink).toBeInTheDocument();
   userEvent.click(moreDetailsLink);
   const pikachuDetails = screen.getByText(`${pikachuMock.name} Details`);
@@ -53,7 +53,7 @@ test('Não deve existir o link de navegação para os detalhes do Pokémon selec
 
 test('Na seção de detalhes deverá existir um heading h2 com o texto Game Locations of <name>; onde <name> é o nome do Pokémon exibido', () => {
   renderWithRouter(<App />);
-  const moreDetailsLink = screen.getByText('More details');
+  const moreDetailsLink = screen.getByText(/more details/i);
   expect(moreDetailsLink).toBeInTheDocument();
   userEvent.click(moreDetailsLink);
   const gameLocationsOfPikachu = screen.getByRole('heading', { level: 2, name: `Game Locations of ${pikachuMock.name}` });
@@ -62,7 +62,7 @@ test('Na seção de detalhes deverá existir um heading h2 com o texto Game Loca
 
 test('Todas as localizações do Pokémon devem ser mostradas na seção de detalhes', () => {
   renderWithRouter(<App />);
-  const moreDetailsLink = screen.getByText('More details');
+  const moreDetailsLink = screen.getByText(/more details/i);
   expect(moreDetailsLink).toBeInTheDocument();
   userEvent.click(moreDetailsLink);
   const pikachuLocations = pikachuMock.foundAt;
