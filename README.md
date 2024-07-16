@@ -1,16 +1,16 @@
 # React Testing Library
 
 <ul>
-<li>Este projeto teve como objetivo meu aprendizado em RTL.</li>
+<li>This project aimed at my learning in RTL.</li>
 </ul>
 
-Neste projeto, eu:
+In this project, I:
 <ul>
-<li>Apliquei testes em uma aplicação React já criada;</li>
+<li>Applied tests to an existing React application;</li>
 </ul>
 
-O que foi necessário para concluir o projeto:
+What was necessary to complete the project:
 <ul>
-<li>Ter conhecimento em componentes, estados, propriedades, ciclo de vida e eventos são importantes para escrever testes de qualidade;</li>
-<li>Conhecimento em Jest, fundamental para desenvolver aplicações e testes de qualidade;</li>
+<li>Understanding of components, state, props, lifecycle, and events are important for writing quality tests;</li>
+<li>Knowledge of Jest, essential for developing applications and high-quality tests;</li>
 </ul>
